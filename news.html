@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>부동산 뉴스&amp;소식 | 혁신노블부동산</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; }
+body { overscroll-behavior: none; }
+img { max-width: 100%; object-fit: cover; }
+::-webkit-scrollbar { display: none; }
+.scrollbar-none { scrollbar-width: none; }
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#001a40", "on-primary-fixed": "#00174a", "surface-tint": "#0054d8", "on-tertiary-container": "#f5f6ff", "primary-fixed-dim": "#b3c5ff", "background": "#f7f9ff", "on-surface": "#181c20", "on-surface-variant": "#424656", "interactive-hover-tint": "rgba(217, 217, 255, 0.11)", "inverse-on-surface": "#eef1f6", "surface-container-low": "#f1f4f9", "primary-fixed": "#dbe1ff", "inverse-primary": "#b3c5ff", "on-error-container": "#93000a", "secondary": "#0059b9", "tertiary": "#0056b2", "on-tertiary-fixed-variant": "#004491", "on-secondary-container": "#fefcff", "tag-metadata": "#b0b8c1", "on-tertiary-fixed": "#001a40", "error-container": "#ffdad6", "surface-variant": "#e0e3e8", "on-secondary": "#ffffff", "surface-dim": "#d7dadf", "interactive-focus-ring": "#3182f6", "secondary-container": "#1071e5", "surface-bright": "#f7f9ff", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#acc7ff", "surface-container": "#ebeef3", "surface-container-high": "#e5e8ee", "tertiary-fixed-dim": "#acc7ff", "on-primary": "#ffffff", "secondary-fixed": "#d7e2ff", "surface": "#f7f9ff", "foreground-secondary": "#4e5968", "on-primary-fixed-variant": "#003ea6", "on-primary-container": "#f5f5ff", "outline": "#737687", "surface-container-highest": "#e0e3e8", "muted": "#6b7684", "primary-container": "#0064ff", "surface-muted": "#f2f4f6", "tertiary-fixed": "#d7e2ff", "on-error": "#ffffff", "primary": "#004ecb", "border-structural": "#d1d6db", "error": "#ba1a1a", "surface-canvas": "#ffffff", "on-background": "#181c20", "border-hairline": "#e5e8eb", "foreground-strong": "#191f28", "outline-variant": "#c2c6d8", "on-secondary-fixed-variant": "#004491", "inverse-surface": "#2d3135", "tertiary-container": "#316fcd", "surface-container-lowest": "#ffffff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-lg": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-md": "0.75rem", "margin": "2rem", "gutter": "1.5rem", "xxl": "6rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "caption": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "34px", "fontWeight": "700" }], "caption": ["11px", { "lineHeight": "16px", "fontWeight": "600" }], "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "700" }], "display-mobile": ["32px", { "lineHeight": "42px", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "display": ["48px", { "lineHeight": "62px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "42px", "fontWeight": "700" }] } } } };</script>
+<script src="db.js"></script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased pb-[calc(64px+env(safe-area-inset-bottom))] md:pb-0">
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-canvas/90 backdrop-blur-xl border-b border-border-hairline">
+<div class="h-16 md:h-20 max-w-[1200px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-gutter">
+<div class="flex items-center gap-gutter min-w-0">
+<a class="flex items-center gap-space-sm min-h-[44px] shrink-0" href="index.html">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center overflow-hidden border border-border-hairline"><span class="material-symbols-outlined text-primary text-[22px]">apartment</span></div>
+<div class="flex flex-col"><span class="font-title-md text-title-md text-foreground-strong tracking-tight">혁신노블부동산</span><span class="font-caption text-caption text-tag-metadata">진주혁신도시 전문중개</span></div>
+</a>
+<nav class="hidden md:flex items-center gap-space-xs">
+<a class="min-h-[44px] inline-flex items-center px-space-md rounded-full font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-interactive-hover-tint whitespace-nowrap transition-colors" href="index.html"><span class="lg:hidden">홈</span><span class="hidden lg:inline">홈/매물안내</span></a>
+<a class="min-h-[44px] inline-flex items-center px-space-md rounded-full font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-interactive-hover-tint whitespace-nowrap transition-colors" href="news.html?cat=%EC%B6%A9%EB%AC%B4%EA%B3%B5%EB%8F%99%20%EC%8B%9C%EC%84%B8%EB%8F%99%ED%96%A5"><span class="lg:hidden">시세동향</span><span class="hidden lg:inline">충무공동 시세/동향</span></a>
+<a aria-current="page" class="min-h-[44px] inline-flex items-center px-space-md rounded-full bg-surface-muted text-primary font-label-md text-label-md font-bold whitespace-nowrap transition-colors" href="news.html"><span class="lg:hidden">뉴스&amp;소식</span><span class="hidden lg:inline">부동산 뉴스&amp;소식</span></a>
+<a class="min-h-[44px] inline-flex items-center px-space-md rounded-full font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-interactive-hover-tint whitespace-nowrap transition-colors" href="index.html#about">중개사 소개</a>
+<a class="min-h-[44px] inline-flex items-center px-space-md rounded-full font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-interactive-hover-tint whitespace-nowrap transition-colors" href="index.html#location">오시는 길</a>
+</nav>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<a class="hidden xl:flex items-center gap-space-sm px-space-lg min-h-[44px] rounded-full bg-primary-container text-on-primary-container hover:bg-interactive-focus-ring active:bg-primary transition-colors" href="tel:0557622565"><span class="material-symbols-outlined text-[18px]">call</span><div class="flex flex-col text-left"><span class="font-caption text-caption opacity-80 leading-none">전화상담 바로가기</span><span class="font-label-md text-label-md leading-tight">055-762-2565</span></div></a>
+<a aria-label="전화상담" class="md:hidden w-11 h-11 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center" href="tel:01044893936"><span class="material-symbols-outlined text-[20px]">call</span></a>
+<a class="hidden lg:flex items-center pl-space-sm border-l border-border-hairline min-h-[44px]" href="index.html#about"><img alt="대표공인중개사 조우정" class="w-8 h-8 rounded-full object-cover" src="Cho.jpg"></a>
+</div>
+</div>
+</header>
+
+<main class="w-full pt-16 md:pt-20 bg-surface-muted min-h-screen">
+<div class="max-w-[1200px] w-full mx-auto px-margin-mobile md:px-margin py-space-xl flex flex-col gap-space-xl">
+
+<section class="flex flex-col gap-space-lg">
+<div class="flex items-center gap-space-xs text-foreground-secondary font-label-sm text-label-sm">
+<span class="text-primary font-bold">INSIGHT &amp; NEWS</span>
+<span class="text-tag-metadata">/</span>
+<span>충무공동 부동산 브리핑</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pb-space-sm">
+<div class="max-w-3xl flex flex-col gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-foreground-strong tracking-tight">충무공동 부동산 뉴스 &amp; 시세 소식</h1>
+<p class="font-body-lg text-body-lg text-foreground-secondary leading-relaxed">진주혁신도시 및 충무공동 아파트·상가 시장의 핵심 정책, 실거래가 변동, 학군 및 상권 소식을 공인중개사가 직접 분석해 전해드립니다.</p>
+</div>
+<div class="flex items-center gap-space-md bg-surface-container px-space-lg py-space-md rounded-2xl border border-border-hairline shadow-sm shrink-0 self-start lg:self-auto">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[24px]">verified</span></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-foreground-secondary">공식 등록 브리핑</span>
+<span class="font-title-md text-title-md text-foreground-strong" id="post-count">등록 게시글 0건</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-space-md justify-between items-stretch md:items-center pt-space-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0" id="news-tab-container"></div>
+<div class="relative w-full md:w-72 lg:w-80 shrink-0">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-tag-metadata text-[20px] pointer-events-none">search</span>
+<input aria-label="게시글 검색" class="w-full h-12 pl-10 pr-4 bg-surface-canvas border border-border-structural rounded-xl text-[16px] md:text-body-sm font-body-sm text-foreground-strong placeholder:text-tag-metadata focus:outline-none focus:border-interactive-focus-ring focus:ring-2 focus:ring-interactive-focus-ring/15 transition-all" id="search-input" placeholder="단지명, 세무 정책, 키워드 검색" type="search">
+</div>
+</div>
+</section>
+
+<section class="flex flex-col gap-space-md" id="featured-section" style="display:none">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<h2 class="font-headline-sm text-headline-sm text-foreground-strong">이달의 주목할 주요 이슈</h2>
+</div>
+<span class="hidden sm:inline font-label-sm text-label-sm text-muted">충무공부동산 심층 브리핑 PICK</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter" id="featured-grid"></div>
+</section>
+
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<section class="lg:col-span-8 flex flex-col gap-space-md min-w-0">
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-foreground-strong">실시간 뉴스 &amp; 전문 리포트</h2>
+<p class="font-body-sm text-body-sm text-muted" id="list-summary">게시글을 불러오는 중입니다…</p>
+</div>
+<div class="bg-surface-canvas rounded-[20px] border border-border-hairline shadow-sm overflow-hidden">
+<div class="hidden md:grid grid-cols-12 px-space-lg py-3 bg-surface-muted text-foreground-secondary font-label-md text-label-md border-b border-border-hairline">
+<div class="col-span-2">분류</div>
+<div class="col-span-6">제목 및 핵심 리포트 요약</div>
+<div class="col-span-2 text-center">작성자</div>
+<div class="col-span-2 text-right">등록일</div>
+</div>
+<div class="divide-y divide-border-hairline flex flex-col" id="news-list">
+<div class="p-space-xl text-center font-body-md text-body-md text-muted">불러오는 중…</div>
+</div>
+<div class="px-space-lg py-space-md bg-surface-canvas border-t border-border-hairline flex items-center justify-between gap-space-sm" id="pagination-bar">
+<span class="font-label-sm text-label-sm text-foreground-secondary hidden sm:inline-block" id="page-info"></span>
+<div class="flex items-center gap-1 mx-auto sm:mx-0" id="pagination"></div>
+</div>
+</div>
+</section>
+
+<aside class="hidden lg:flex lg:col-span-4 flex-col gap-space-md sticky top-28">
+<div class="bg-surface-canvas rounded-[20px] border border-border-hairline shadow-sm overflow-hidden">
+<div class="relative h-56 bg-surface-container">
+<img alt="대표공인중개사 조우정" class="absolute inset-0 w-full h-full object-cover object-top" src="Cho.jpg">
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-primary font-bold">대표 공인중개사</span>
+<span class="font-headline-sm text-headline-sm text-foreground-strong">조우정</span>
+<p class="font-body-sm text-body-sm text-foreground-secondary">충무공동 현장에서 매일 시세를 추적하며 직접 분석한 소식을 전해드립니다.</p>
+<a class="mt-space-xs min-h-[48px] rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-space-xs hover:bg-secondary transition-colors" href="tel:01044893936"><span class="material-symbols-outlined text-[18px]">phone_iphone</span>010-4489-3936</a>
+<a class="min-h-[48px] rounded-full bg-surface-container-low text-foreground-strong font-label-md text-label-md font-bold flex items-center justify-center gap-space-xs hover:bg-surface-container transition-colors" href="tel:0557622565"><span class="material-symbols-outlined text-[18px]">deskphone</span>055-762-2565</a>
+</div>
+</div>
+<div class="bg-surface-canvas rounded-[20px] border border-border-hairline shadow-sm p-space-lg flex flex-col gap-space-sm">
+<span class="font-title-md text-title-md text-foreground-strong">카테고리</span>
+<div class="flex flex-col" id="sidebar-categories"></div>
+</div>
+</aside>
+</div>
+
+<section class="w-full bg-surface-canvas rounded-[24px] border border-border-hairline p-space-lg md:p-space-xl flex flex-col lg:flex-row items-center justify-between gap-space-lg shadow-sm relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-64 h-64 rounded-full bg-primary/5 pointer-events-none"></div>
+<div class="flex flex-col gap-space-xs max-w-2xl text-center lg:text-left">
+<div class="inline-flex items-center justify-center lg:justify-start gap-1.5 text-primary font-label-sm text-label-sm font-bold"><span class="material-symbols-outlined text-[18px]">support_agent</span>진주혁신도시 실시간 부동산 매물 및 권리분석 상담</div>
+<h2 class="font-headline-md text-headline-md text-foreground-strong leading-tight">기사나 소식을 보시고 궁금한 단지나 매물이 있으신가요?</h2>
+<p class="font-body-md text-body-md text-foreground-secondary">충무공동 현장에서 매일 시세를 추적하는 공인중개사가 직접 정직하고 명쾌하게 답변해 드립니다.</p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full lg:w-auto shrink-0 z-10">
+<a class="px-space-lg min-h-[52px] rounded-full bg-primary-container text-on-primary-container font-title-md text-title-md font-bold flex items-center justify-center gap-space-xs hover:bg-interactive-focus-ring active:bg-primary transition-all shadow-sm" href="tel:01044893936"><span class="material-symbols-outlined text-[20px]">phone_iphone</span><span>010-4489-3936</span></a>
+<a class="px-space-lg min-h-[52px] rounded-full bg-surface-canvas border border-foreground-secondary/30 text-foreground-strong font-title-md text-title-md font-bold flex items-center justify-center gap-space-xs hover:bg-interactive-hover-tint hover:border-primary hover:text-primary transition-all" href="tel:0557622565"><span class="material-symbols-outlined text-[20px]">call</span><span>055-762-2565 유선문의</span></a>
+</div>
+</section>
+
+</div>
+</main>
+
+<footer class="w-full bg-surface-canvas border-t border-border-hairline py-space-xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin flex flex-col gap-space-xl">
+<div class="flex flex-col lg:flex-row justify-between items-start gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm"><span class="font-title-md text-title-md text-foreground-strong">혁신노블부동산중개사무소</span><span class="px-space-sm py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-foreground-secondary">정식등록 중개사무소</span></div>
+<p class="font-body-sm text-body-sm text-foreground-secondary">진주 충무공동 혁신도시 아파트, 상가, 오피스텔, 분양권 매매 및 임대차 전문</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-lg lg:items-end">
+<div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm text-tag-metadata uppercase">대표 유선 상담</span><a class="font-headline-sm text-headline-sm text-primary hover:underline min-h-[44px] inline-flex items-center" href="tel:0557622565">055-762-2565</a></div>
+<div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm text-tag-metadata uppercase">직통 모바일 상담</span><a class="font-headline-sm text-headline-sm text-foreground-strong hover:text-primary hover:underline min-h-[44px] inline-flex items-center" href="tel:01044893936">010-4489-3936</a></div>
+</div>
+</div>
+<div class="w-full h-px bg-border-hairline"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg text-foreground-secondary font-body-sm text-body-sm">
+<div><span class="block font-label-md text-label-md text-foreground-strong mb-space-xs">사무소 기본 정보</span><p>상호: 혁신노블부동산중개사무소</p><p>대표공인중개사: 조우정</p><p>중개업 등록번호: 제48170-2024-00022호</p><p>사업자등록번호: 000-00-00000</p></div>
+<div><span class="block font-label-md text-label-md text-foreground-strong mb-space-xs">소재지 및 방문 안내</span><p>경남 진주시 사들로61</p><p>(대방노블랜드아파트 상가동 103호, 주차 가능)</p></div>
+<div><span class="block font-label-md text-label-md text-foreground-strong mb-space-xs">영업시간 및 휴무일</span><p>평일: 09:30 ~ 19:30</p><p>토요일: 10:00 ~ 17:00</p><p class="text-muted">(일요일 및 공휴일은 사전예약제 상담 운영)</p></div>
+<div><span class="block font-label-md text-label-md text-foreground-strong mb-space-xs">고객 안내 및 보증</span><p>한국공인중개사협회 손해배상책임보증 (2억원 가입)</p><p>실매물 검증 보장 및 안전거래 시스템 준수</p></div>
+</div>
+<div class="flex flex-col sm:flex-row justify-between items-center pt-space-md border-t border-border-hairline gap-space-sm text-tag-metadata font-label-sm text-label-sm">
+<span>© 2024 혁신노블부동산중개사무소. All rights reserved.</span>
+<div class="flex items-center gap-space-md">
+<span class="hidden md:inline">진주혁신도시 부동산 플랫폼 · 신뢰와 투명성의 금융형 가치평가</span>
+<a class="min-h-[44px] inline-flex items-center gap-1 px-space-md rounded-full border border-border-hairline text-foreground-secondary hover:text-primary hover:border-primary transition-colors" href="admin.html" id="agent-login-btn"><span class="material-symbols-outlined text-[16px]">lock</span>Agent Login</a>
+</div>
+</div>
+</div>
+</footer>
+
+<nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-surface-canvas/95 backdrop-blur-xl border-t border-border-hairline" style="padding-bottom: env(safe-area-inset-bottom);">
+<div class="grid grid-cols-5 h-16">
+<a class="flex flex-col items-center justify-center gap-0.5 min-h-[44px] text-foreground-secondary text-[12px] font-semibold" href="index.html"><span class="material-symbols-outlined text-[22px]">home</span>홈</a>
+<a class="flex flex-col items-center justify-center gap-0.5 min-h-[44px] text-primary text-[12px] font-bold" href="news.html"><span class="material-symbols-outlined text-[22px]">article</span>소식</a>
+<a class="flex flex-col items-center justify-center gap-0.5 min-h-[44px] text-primary text-[12px] font-bold" href="tel:01044893936"><span class="w-12 h-12 -mt-6 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg"><span class="material-symbols-outlined text-[24px]">call</span></span>전화상담</a>
+<a class="flex flex-col items-center justify-center gap-0.5 min-h-[44px] text-foreground-secondary text-[12px] font-semibold" href="index.html#about"><span class="material-symbols-outlined text-[22px]">badge</span>중개사</a>
+<a class="flex flex-col items-center justify-center gap-0.5 min-h-[44px] text-foreground-secondary text-[12px] font-semibold" href="index.html#location"><span class="material-symbols-outlined text-[22px]">location_on</span>오시는길</a>
+</div>
+</nav>
+
+<script>
+(function () {
+  const PAGE_SIZE = 10;
+  const DEFAULT_IMAGE = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCDiBGE4_Du_jUkYM3a9xUUmtqJ4hQQ8VAKpgVU789g9KfaMIjBI0CJDshlBfjNg_hY09qum1vgzCL4wpLIhcSMosKRt6S3_RcAJEQDcLXOi5MVFQKIs2ScU3BBLAeIcUPTMBXJ6-x60tAUO94tIbXCZQ_p9-zfvEkrPTw1GHx0WGz0aiq0aPvdB4mOjP_P4QPfXz2A3k-0ho16FS583Vdt1zsveYj2p_twM3opSeg';
+  const TAB_ON = 'min-h-[44px] px-space-lg rounded-full font-label-md text-label-md bg-primary text-on-primary font-bold shadow-sm transition-all whitespace-nowrap shrink-0';
+  const TAB_OFF = 'min-h-[44px] px-space-lg rounded-full font-label-md text-label-md bg-surface-canvas text-foreground-secondary hover:text-primary border border-border-hairline transition-all whitespace-nowrap shrink-0';
+
+  const state = { posts: [], filter: getQueryParam('cat') || 'all', query: getQueryParam('q') || '', page: 1 };
+  if (state.filter !== 'all' && !BOARD_CATEGORIES.includes(state.filter)) state.filter = 'all';
+
+  const $ = id => document.getElementById(id);
+  const summaryOf = (p, n) => { const t = markdownToText(p.content); return t.length > n ? t.slice(0, n) + '…' : t; };
+  const detailUrl = p => 'news-detail.html?id=' + encodeURIComponent(p.id);
+  const badge = (p, extra) => '<span class="px-2.5 py-1 rounded-full ' + getCategoryStyle(p.category) + ' font-label-sm text-label-sm font-bold inline-block ' + (extra || '') + '">' + escapeHtml(p.category || '소식') + '</span>';
+
+  function renderTabs() {
+    const items = [['all', '전체보기']].concat(BOARD_CATEGORIES.map(c => [c, c]));
+    $('news-tab-container').innerHTML = items.map(([v, label]) =>
+      '<button class="' + (state.filter === v ? TAB_ON : TAB_OFF) + '" data-filter="' + escapeHtml(v) + '" type="button">' + escapeHtml(label) + '</button>'
+    ).join('');
+    $('news-tab-container').querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
+      state.filter = btn.dataset.filter;
+      state.page = 1;
+      renderTabs();
+      render();
+    }));
+  }
+
+  function renderSidebar() {
+    const counts = {};
+    state.posts.forEach(p => { counts[p.category] = (counts[p.category] || 0) + 1; });
+    $('sidebar-categories').innerHTML = BOARD_CATEGORIES.map(c =>
+      '<button class="min-h-[44px] flex items-center justify-between gap-space-sm px-space-sm rounded-xl text-left font-body-sm text-body-sm text-foreground-secondary hover:bg-surface-muted hover:text-primary transition-colors" data-cat="' + escapeHtml(c) + '" type="button"><span>' + escapeHtml(c) + '</span><span class="font-label-sm text-label-sm text-muted">' + (counts[c] || 0) + '</span></button>'
+    ).join('');
+    $('sidebar-categories').querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
+      state.filter = btn.dataset.cat;
+      state.page = 1;
+      renderTabs();
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }));
+  }
+
+  function renderFeatured() {
+    const section = $('featured-section');
+    const top = state.posts.slice(0, 3);
+    if (!top.length || state.filter !== 'all' || state.query.trim()) { section.style.display = 'none'; return; }
+    const lead = top[0];
+    const side = top.slice(1);
+    const leadHtml =
+      '<a class="' + (side.length ? 'lg:col-span-7' : 'lg:col-span-12') + ' group bg-surface-canvas rounded-[20px] border border-border-hairline p-space-lg flex flex-col justify-between hover:-translate-y-1 transition-transform duration-200 shadow-sm relative overflow-hidden" href="' + detailUrl(lead) + '">' +
+      '<div class="flex flex-col gap-space-md">' +
+      '<div class="flex items-center justify-between gap-space-sm">' + badge(lead) + '<span class="font-label-sm text-label-sm text-muted">' + escapeHtml(formatDate(lead.date)) + '</span></div>' +
+      '<div class="relative w-full h-48 sm:h-56 rounded-xl overflow-hidden bg-surface-container"><img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="' + escapeHtml(lead.thumbnail || DEFAULT_IMAGE) + '"><div class="absolute inset-0 bg-gradient-to-t from-foreground-strong/60 via-transparent to-transparent"></div></div>' +
+      '<div class="flex flex-col gap-space-xs"><h3 class="font-headline-sm text-headline-sm text-foreground-strong group-hover:text-primary transition-colors leading-snug">' + escapeHtml(lead.title) + '</h3>' +
+      '<p class="font-body-md text-body-md text-foreground-secondary line-clamp-2">' + escapeHtml(summaryOf(lead, 140)) + '</p></div></div>' +
+      '<div class="mt-space-md pt-space-md border-t border-border-hairline bg-surface-muted -mx-space-lg -mb-space-lg p-space-lg flex items-center gap-space-md">' +
+      '<img alt="" class="w-9 h-9 rounded-full object-cover shrink-0" src="Cho.jpg"><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-muted">작성자</span><p class="font-body-sm text-body-sm text-foreground-strong truncate">' + escapeHtml(lead.author || '혁신노블부동산') + '</p></div></div>' +
+      '</a>';
+    const sideHtml = side.length ? '<div class="lg:col-span-5 flex flex-col gap-space-md">' + side.map(p =>
+      '<a class="group flex-1 bg-surface-canvas rounded-[20px] border border-border-hairline p-space-lg flex flex-col justify-between hover:-translate-y-1 transition-transform duration-200 shadow-sm" href="' + detailUrl(p) + '">' +
+      '<div class="flex flex-col gap-space-sm"><div class="flex items-center justify-between gap-space-sm">' + badge(p) + '<span class="font-label-sm text-label-sm text-muted">' + escapeHtml(formatDate(p.date)) + '</span></div>' +
+      '<h3 class="font-title-md text-title-md text-foreground-strong group-hover:text-primary transition-colors leading-snug">' + escapeHtml(p.title) + '</h3>' +
+      '<p class="font-body-sm text-body-sm text-foreground-secondary line-clamp-2">' + escapeHtml(summaryOf(p, 100)) + '</p></div>' +
+      '<div class="mt-space-md pt-space-sm border-t border-border-hairline flex items-center justify-between gap-space-sm font-label-sm text-label-sm text-foreground-secondary"><span class="text-primary font-bold inline-flex items-center gap-1">자세히 보기<span class="material-symbols-outlined text-[16px]">arrow_forward</span></span><span class="truncate">작성: ' + escapeHtml(p.author || '혁신노블부동산') + '</span></div>' +
+      '</a>'
+    ).join('') + '</div>' : '';
+    $('featured-grid').innerHTML = leadHtml + sideHtml;
+    section.style.display = '';
+  }
+
+  function filtered() {
+    const q = state.query.trim().toLowerCase();
+    return state.posts.filter(p => {
+      if (state.filter !== 'all' && p.category !== state.filter) return false;
+      if (!q) return true;
+      return [p.title, p.category, p.author, markdownToText(p.content)].join(' ').toLowerCase().includes(q);
+    });
+  }
+
+  function renderList() {
+    const list = filtered();
+    const pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+    if (state.page > pages) state.page = pages;
+    const start = (state.page - 1) * PAGE_SIZE;
+    const rows = list.slice(start, start + PAGE_SIZE);
+    $('list-summary').textContent = '총 ' + list.length + '건의 현장 리포트와 분석 칼럼이 등록되어 있습니다.';
+    if (!rows.length) {
+      $('news-list').innerHTML = '<div class="p-space-xl text-center font-body-md text-body-md text-muted">' + (state.posts.length ? '검색 결과가 없습니다.' : '아직 등록된 게시글이 없습니다.') + '</div>';
+    } else {
+      $('news-list').innerHTML = rows.map(p =>
+        '<a class="p-space-lg md:py-space-md grid grid-cols-1 md:grid-cols-12 items-start md:items-center gap-y-2 hover:bg-interactive-hover-tint transition-colors group" href="' + detailUrl(p) + '">' +
+        '<div class="md:col-span-2">' + badge(p) + '</div>' +
+        '<div class="md:col-span-6 flex flex-col md:pr-space-md min-w-0"><span class="font-title-md text-title-md text-foreground-strong group-hover:text-primary transition-colors leading-tight">' + escapeHtml(p.title) + '</span>' +
+        '<p class="font-body-sm text-body-sm text-foreground-secondary line-clamp-1 mt-1">' + escapeHtml(summaryOf(p, 120)) + '</p></div>' +
+        '<div class="flex items-center gap-space-sm md:contents"><div class="md:col-span-2 md:text-center font-label-sm text-label-sm text-foreground-secondary">' + escapeHtml(p.author || '') + '</div>' +
+        '<div class="md:col-span-2 md:text-right font-label-sm text-label-sm text-muted">' + escapeHtml(formatDate(p.date)) + '</div></div>' +
+        '</a>'
+      ).join('');
+    }
+    $('page-info').textContent = list.length ? (start + 1) + ' - ' + Math.min(start + PAGE_SIZE, list.length) + ' / 전체 ' + list.length + '개 게시글' : '';
+    const btn = (label, page, opts) => '<button ' + (opts.disabled ? 'disabled ' : '') + 'class="w-11 h-11 rounded-xl flex items-center justify-center font-label-md text-label-md transition-colors ' + (opts.active ? 'bg-primary text-on-primary font-bold' : opts.disabled ? 'text-tag-metadata' : 'text-foreground-strong hover:bg-surface-muted') + '" data-page="' + page + '" type="button"' + (opts.aria ? ' aria-label="' + opts.aria + '"' : '') + '>' + label + '</button>';
+    let html = btn('<span class="material-symbols-outlined text-[18px]">chevron_left</span>', state.page - 1, { disabled: state.page <= 1, aria: '이전 페이지' });
+    const from = Math.max(1, Math.min(state.page - 2, pages - 4));
+    for (let i = from; i <= Math.min(pages, from + 4); i++) html += btn(String(i), i, { active: i === state.page });
+    html += btn('<span class="material-symbols-outlined text-[18px]">chevron_right</span>', state.page + 1, { disabled: state.page >= pages, aria: '다음 페이지' });
+    $('pagination').innerHTML = html;
+    $('pagination').querySelectorAll('button:not([disabled])').forEach(b => b.addEventListener('click', () => {
+      state.page = Number(b.dataset.page);
+      renderList();
+      $('news-list').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }));
+  }
+
+  function render() {
+    renderFeatured();
+    renderList();
+  }
+
+  const input = $('search-input');
+  input.value = state.query;
+  let timer = null;
+  input.addEventListener('input', () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { state.query = input.value; state.page = 1; render(); }, 150);
+  });
+
+  renderTabs();
+  getPosts().then(posts => {
+    state.posts = posts;
+    $('post-count').textContent = '등록 게시글 ' + posts.length + '건';
+    renderSidebar();
+    render();
+  }).catch(() => {
+    $('news-list').innerHTML = '<div class="p-space-xl text-center font-body-md text-body-md text-error">게시글을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.</div>';
+  });
+})();
+</script>
+</body>
+</html>
